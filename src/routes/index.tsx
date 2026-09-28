@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 const TITLE = "Harsh | Let's Build";
 const DESCRIPTION =
-  "Harsh Agrawal wants to serve Cornell Tech by mentoring students, bringing people together and connecting technical talent with the right opportunities.";
+  "Harsh Agrawal is an AI Engineer passionate about building intelligent systems, mentoring others, and connecting people with opportunities."; 
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -244,7 +244,7 @@ function Index() {
             </span>
           </div>
           <nav
-            aria-label="Campaign sections"
+            aria-label="Portfolio sections"
             className="hidden items-center gap-2 xl:flex xl:justify-self-center xl:gap-5"
           >
             {NAV.map((item) => (
@@ -282,7 +282,7 @@ function Index() {
           <div className="relative mx-auto flex max-w-[1800px] flex-col items-center text-center">
             <div className="mb-8 inline-block rounded border border-primary/20 bg-primary/5 px-3 py-1">
               <span className="font-mono text-sm font-medium text-primary md:text-base">
-                [ campaign_init: cornell_tech ]
+                [ AI Engineer Portfolio ]
               </span>
             </div>
             <h1 className="mb-8 text-5xl font-bold leading-[0.95] tracking-tighter sm:text-7xl md:text-9xl">
@@ -299,12 +299,11 @@ function Index() {
                 Harsh Agrawal
               </p>
               <p className="font-mono text-base text-muted-foreground md:text-lg">
-                Candidate for Technical Co-President, CTSG
+                AI Engineer
               </p>
             </div>
             <p className="mb-10 w-full max-w-3xl text-center text-lg font-light leading-relaxed text-muted-foreground md:text-xl">
-              I help people move from idea → prototype → product by finding the right mentors,
-              building the right teams and making the next step obvious.
+              I build and deploy AI systems that solve complex real-world challenges. I thrive on tackling hard problems, shipping production solutions, and delivering measurable impact.
             </p>
             <div className="mb-10 grid w-full max-w-4xl gap-4 md:grid-cols-3">
               {HERO_STATS.map((stat) => (
@@ -371,8 +370,7 @@ function Index() {
 
               <div className="space-y-6">
                 <p className="max-w-3xl text-xl leading-relaxed text-muted-foreground md:text-2xl">
-                  I want the Technical President role to be useful, practical and deeply connected to
-                  what students actually need.
+                  I believe in listening first, connecting people with opportunities, and helping turn ambitious ideas into products.
                 </p>
 
                 <ul className="space-y-4 text-lg leading-relaxed text-card-foreground md:text-xl">
@@ -393,37 +391,23 @@ function Index() {
           </div>
         </section>
 
-        {/* CAMPAIGN MOTTO */}
+        {/* MY PHILOSOPHY */}
         <section className="relative overflow-hidden border-b border-primary/20 bg-primary/[0.04] px-6 py-20 md:px-12 lg:px-20 lg:py-28">
           <div className="pointer-events-none absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/70 to-transparent" />
           <div className="relative mx-auto max-w-5xl text-center">
             <div className="font-mono text-xs font-bold tracking-[0.3em] text-primary md:text-sm">
-              MOTTO OF THE CAMPAIGN
+              MY PHILOSOPHY
             </div>
             <blockquote className="mt-7 text-3xl font-extrabold leading-tight tracking-tight text-card-foreground md:text-5xl lg:text-6xl">
               <span className="text-primary">&ldquo;</span>
-              Connect people. Build momentum. Ship ideas.
+              Connect. Collect. Build.
               <span className="text-purple">&rdquo;</span>
             </blockquote>
             <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-primary shadow-[0_0_24px_rgb(34_211_238_/_55%)]" />
           </div>
         </section>
 
-        {/* EXPERIENCE & WHAT I BRING */}
-        <section id="story" className="border-b border-border px-6 md:px-12 lg:px-20 py-24">
-          <div className="mx-auto max-w-[1800px]">
-            <SectionLabel>MY EXPERIENCE &amp; WHAT I BRING</SectionLabel>
-            <div className="group relative aspect-video w-full overflow-hidden rounded-xl border border-border bg-card">
-              <iframe
-                className="absolute inset-0 size-full"
-                src="https://www.youtube.com/embed/h01mw3dqXVM"
-                title="Harsh Agrawal campaign video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </section>
+
 
         {/* JOURNEY */}
         <section id="journey" className="border-b border-border px-6 md:px-12 lg:px-20 py-24">
@@ -702,11 +686,10 @@ function Index() {
           <div className="mx-auto max-w-[1800px]">
             <SectionLabel>MY VISION</SectionLabel>
             <h2 className="max-w-5xl text-5xl font-black tracking-[-0.06em] text-card-foreground md:text-7xl">
-              A CTSG That Helps You <span className="text-primary">Build &amp; Connect.</span>
+              A Portfolio That Showcases <span className="text-primary">What I Build.</span>
             </h2>
             <p className="mt-6 max-w-3xl text-xl leading-relaxed text-muted-foreground md:text-2xl">
-              I want the Technical President role to be practical, not ceremonial. That means real
-              support when students are stuck and real opportunities when they need momentum.
+              I build products that matter and create meaningful connections. My goal is to help others achieve their best work through technical leadership and mentorship.
             </p>
             <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
               {PILLARS.map((p) => (
@@ -733,7 +716,7 @@ function Index() {
           className="border-b border-border bg-card/30 px-6 md:px-12 lg:px-20 py-24"
         >
           <div className="mx-auto max-w-[1800px]">
-            <SectionLabel>WHAT I BRING TO CTSG</SectionLabel>
+            <SectionLabel>WHY WORK WITH ME</SectionLabel>
             <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl">
               I can help you build and connect you forward.
             </h2>
@@ -788,8 +771,7 @@ function Index() {
               Stuck? Need an Intro? <span className="text-primary">I'm here.</span>
             </h2>
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-muted-foreground md:text-2xl">
-              Vote for a Technical President who will listen, find the right mentor and create the
-              connections that move your work forward.
+              Whether you need technical advice, a meaningful introduction, or help bringing an idea to life, I'm here to help.
             </p>
             <div className="mx-auto mt-10 max-w-xl rounded-2xl border border-primary/20 bg-card p-6 text-left shadow-[0_0_0_1px_rgba(94,234,212,0.06)] md:p-8">
               <div className="space-y-2 font-mono text-sm text-card-foreground md:text-base">
@@ -802,7 +784,7 @@ function Index() {
             <div className="mt-10">
               <p className="font-mono text-lg font-medium text-card-foreground">Harsh Agrawal</p>
               <p className="font-mono text-sm text-muted-foreground">
-                Candidate for Technical President, CTSG
+                AI Engineer
               </p>
               <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 font-mono text-sm">
                 <a className="text-primary hover:underline" href="mailto:ha455@cornell.edu">
